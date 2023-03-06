@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    overflow-y: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url('images/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 3rem;
+
+
+}
+
+/* .content{
+    border: 2px solid white;
+} */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+}
+
+section {
+
+    padding-top: 5rem;
+    /* border: 1px solid white; */
+}
+
+section p {
+    color: white;
+    font-size: 2rem;
+}
+
+section h1 {
+    font-size: 5rem;
+    color: white;
+    letter-spacing: 1.2;
+}
+
+section a {
+    padding: .5rem 1rem;
+    background: transparent;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    padding: .5rem;
+}
+
+
+.bubbles {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    left: 0;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbles img {
+    width: 50px;
+}
+
+.bubbles img:nth-child(1){
+    width: 50px;
+    animation: bbl1 infinite linear 10s;
+}
+.bubbles img:nth-child(2){
+    width: 40px;
+    animation: bbl2 infinite linear 5s;
+}
+.bubbles img:nth-child(3){
+    width: 10px;
+    animation: bbl3 infinite linear 15s;
+}
+.bubbles img:nth-child(4){
+    width: 60px;
+    animation: bbl4 infinite linear 7s;
+}
+.bubbles img:nth-child(5){
+    width: 40px;
+    animation: bbl5 infinite linear 13s;
+}
+.bubbles img:nth-child(6){
+    width: 30px;
+    animation: bbl6 infinite linear 9s;
+}
+
+
+
+@keyframes bbl1 {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 1;
+    }
+}
+
+@keyframes bbl2 {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 1;
+    }
+}
+
+@keyframes bbl3 {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 1;
+    }
+}
+
+@keyframes bbl4 {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 1;
+    }
+}
+
+@keyframes bbl5 {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 1;
+    }
+}
+
+@keyframes bbl6 {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 1;
+    }
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width:600px){
+    section h1{
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+    section p{
+        font-size: 1.5rem;
+    }
+
+    nav img{
+        width: 30px;
+        height: 30px;  
+    }
+}
+
+@media (max-width:340px){
+    section h1{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    section p{
+        font-size: 1rem;
+    }
+
+    nav img{
+        width: 30px;
+        height: 30px;  
+    }
+}
